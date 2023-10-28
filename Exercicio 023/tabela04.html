@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela04</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            border-collapse: collapse;
+            width: 300px;
+            text-align: center;
+        }
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício de tabelas</h1>
+    <table>
+        <caption><strong>Filmes Favoritos</strong></caption>
+        <thead>
+            <tr>
+                <th scope="col"><strong>Grupo</strong></th>
+                <th scope="col"><strong>Nomes</strong></th>
+                <th scope="colgroup" colspan="3"><strong>Filmes</strong></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="rowgroup" rowspan="3"><strong>Mulheres</strong></th>
+                <td>Maria de Fátima</td>
+                <td>Paixão de Cristo</td>
+                <td>The Chosen</td>
+                <td>Fátima o filme</td>
+            </tr>
+            <tr>
+                <td>Isabel Gomes</td>
+                <td>Hulk</td>
+                <td>Vingadores</td>
+                <td>Batman</td>
+            </tr>
+            <tr>
+                <td>Sarah Lima</td>
+                <td>Oblivion</td>
+                <td>Matrix</td>
+                <td>Big Hero</td>
+            </tr>
+            <tr>
+                <th scope="rowgroup" rowspan="3"><strong>Homens</strong></th>
+                <td>Mateus Evangelista</td>
+                <td>Intocáveis</td>
+                <td>Amnésia</td>
+                <td>Gladiador</td>
+            </tr>
+            <tr>
+                <td>Simão Pedro</td>
+                <td>Wall-E</td>
+                <td>Oldboy</td>
+                <td>Dangal</td>
+            </tr>
+            <tr>
+                <td>João Batista</td>
+                <td>Star Wars 5</td>
+                <td>Taxi Driver</td>
+                <td>Toy Story</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row" colspan="4">Total</th>
+                <td>1000</td>
+            </tr>
+        </tfoot>
+    </table>
+    
+</body>
+</html>
