@@ -6,8 +6,9 @@
     <title>Exercicio 026</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/mediaqueries.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Meu site</h1>
         <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">Menu</span>
@@ -31,6 +32,16 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia nesciunt, commodi vero sint, numquam tempora, nulla voluptatem dicta rem laboriosam debitis voluptatum cumque asperiores nemo ab a doloremque facilis perferendis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea veniam delectus dolore quidem optio ipsum nemo distinctio natus ducimus hic sed voluptates totam blanditiis, ratione assumenda id quos repellendus! Assumenda. Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus repudiandae, odit non obcaecati quasi provident quaerat facere dignissimos quo, vitae, beatae quod sequi reprehenderit quos? Nesciunt cupiditate nihil corporis est?</p>
         </article>
     </main>
+
+    <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+    </script>
 
     <script>
         function clickMenu() {
